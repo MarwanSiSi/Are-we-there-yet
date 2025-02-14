@@ -569,9 +569,9 @@ export default axiosInstance;
 4. **Run the app:**
    ```sh
    cd backend
-   npm start
+   npm run dev
    cd ../frontend
-   npm start
+   npm run dev
    ```
 
 ## API References
