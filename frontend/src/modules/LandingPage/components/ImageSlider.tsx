@@ -38,6 +38,7 @@ export default function ImageSlider({
   }, [imgs, activeImg, setIndex]);
 
   return (
+    // In ImageSlider.tsx
     <motion.div
       ref={carouselRef}
       className="w-2/3 cursor-grab overflow-hidden py-10"

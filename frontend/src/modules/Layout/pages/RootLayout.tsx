@@ -55,6 +55,7 @@ export default function RootLayout() {
 
   return (
     <div className="h-full">
+      {/* Add overflow-hidden here */}
       <div className="absolute inset-0 -z-50">
         {imgs.map((image, index) => (
           <div
@@ -72,10 +73,8 @@ export default function RootLayout() {
         ))}
         <div className="absolute inset-0 bg-black opacity-30" />
       </div>
-
       {/* <NavigationBar fontColor={"text-black"} /> */}
       <NewNavBar isNewUser={isNewUser} />
-
       <main>
         <Outlet />
       </main>

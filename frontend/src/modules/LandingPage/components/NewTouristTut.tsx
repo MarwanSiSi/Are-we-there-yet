@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { NavBarContent } from "../utils/content";
 import { descriptions } from "../utils/tut-content";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const NewTouristTut = ({
   isOpen,
@@ -46,6 +47,7 @@ const NewTouristTut = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogTitle className="sr-only">Are We There Yet Tutorial</DialogTitle>
       <DialogContent className="fixed left-1/2 top-1/2 w-[90vw] -translate-x-1/2 -translate-y-1/2 transform border-2 border-accent-gold bg-white shadow-lg sm:max-w-[500px]">
         {/* Main container with fixed height */}
         <div className="flex h-[600px] flex-col">
